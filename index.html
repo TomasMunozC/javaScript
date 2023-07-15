@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er proyecto Js</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <article id="tarjeta" class="card">
+        <div class="pag1">
+            <img src="assets/img/amdlaptop.png" alt="una laptop" class="laptop">
+            <div class="datos">
+                <h1>Laptop Gamer AMD</h1>
+                <p>Precio: <span id="precio">400000</span>$</p>
+            </div>
+            <div class="selectors">
+                <div class="select1">
+                    <p>Cantidad:</p>
+                    <input id="icantidad" placeholder="cantidad" type="number" min="1" max="10"/>
+                </div>
+                <div class="select2">
+                    <p>Color:</p>
+                    <select  name="color" id="color">
+                        <option  value="blue">Blue</option>
+                        <option  value="gray">Gray</option>
+                        <option  value="red">Red</option>  
+                    </select>
+                </div>
+            </div>
+            <button id="calcular">Calcular Total</button>
+        </div>
+        
+        <div class="pag2">
+            <h3>Cantidad: <span id="icantidad"></span></h3>
+            <h3>Total: <span id="resultado">0</span>$</h3>
+            <h3>Color: <span class="circulo" id="circulo"></span></h3>
+        </div>
+    </article>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
